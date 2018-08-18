@@ -26,6 +26,15 @@
     li {
         list-style-type: none;
     }
+    ul.hr {
+    margin: 20px; /* Обнуляем значение отступов */
+    padding: 0px; /* Значение полей */
+   }
+   ul.hr li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-left: 300px; /* Отступ слева */
+    padding: 10px; 
+   }
     </style>
 
 	<meta property = "og:title" content = "YogaLotus" />
@@ -40,7 +49,9 @@
     <body>
             
             <div class="text">
+                <div align="center"> 
                 <p> <big> <big> <br/> YogaLotus - всегда рядом </big> </big> </p> </div> 
+            </div>
         <script type="text/javascript">
             //Функция показа 
                 function show(state){
@@ -60,21 +71,25 @@
                     <header>
                         <div id="menu"> 
                             <ul>
+                                <ul class="hr"> 
                             <li><a href="#icons" class="smoothScroll">Кто я?</a></li>
                             <li><a href="#stoimost" class="smoothScroll">Стоимость</a></li>
                             <li><a href="#raspisanie" class="smoothScroll">Расписание</a></li>
                               </ul>
+                            </ul>
                             </div>
                         </div>
                         
                     </header>
                     <main>
                             <div class="title" id="YogaLotus_eto">
-                            <h1>YogaLotus это...</h1>
+
+                            <h1> YogaLotus это... </h1>
                             <img src="picture/dividor.png" alt="разделитель" />
                             </div>
                             <div class="YogaLotuseto">
-                            <p>Персональный сайт йога инструктора - Татьяны Обуховой. Занятия проводятся в Москве и Подмосковье, на дому и в студиях, а также по Skype.</p>
+                            <br> </br>
+                            <p align="center">Персональный сайт йога инструктора - Татьяны Обуховой. Занятия проводятся в Москве и Подмосковье, на дому и в студиях, а также по Skype.</p>
                             </div>
                                                 <div id="icons">
                             <div class="ico">
@@ -357,6 +372,6 @@
                                     </main>		
 
 
-
+                        
     </body>
 </html>
