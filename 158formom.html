@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <div> 
-        <span style="float:right"> <big> tatiyanao@mail.ru +7 926 876 67 46 </big> </span>
-                 <script type="text/javascript">emailProtector.addCloakedMailto("ep_18c5bd5a", 1);</script>
-    </div>
     <header class="header">
             <nav class="navbar navbar-light bg-light">
                 <div class="container">
                     <a class="navbar-brand" href="#"> 
-                        <img src="picture/iStock-500130316.jpg">
+                        <img src="picture/iStock-500130316.jpg" width="1510px">
                     </a>
                 </div>
             </nav>
@@ -35,6 +31,7 @@
     margin-left: 10px; /* Отступ слева */
     padding: 10px; 
     text-align: right;
+
    }
     </style>
 
@@ -46,14 +43,15 @@
 	<meta property = "og:description" content = "YogaLotus - всегда рядом" />
     <meta name="description" content="YogaLotus - всегда рядом">
     <meta name="keywords" content="YogaLotus, йога, тренер, инструктор, занятия, индивидуальный, личный, москва, подмосковье, online, skype, йога на гамаках, антигравити, онлайн">
-    </head>
+    
+
+</head>
     <body>
-            
-            <div class="text">
-                <div align="center"> 
-                <p> <big> <big> <br/> YogaLotus - всегда рядом </big> </big> </p> </div> 
-            </div>
+        
+         
         <script type="text/javascript">
+        
+ 
             //Функция показа 
                 function show(state){
     
@@ -175,201 +173,6 @@
                                         <div class="calen anima">
                                             <div id='calendar'></div>
                                         </div>
-                    <!-- менюшка прилепляется и ездит */ -->
-<script>
-        $(document).ready(function(){
-            $(window).scroll(function(){ //во время прокрутки страницы
-    //проверяем прошли ли мы хедер-высоту менюшки
-                if ($(window).scrollTop()>300){
-                    $("#div-menu").addClass("stickly"); //назначаем класс
-                    }
-                else
-                {
-    //если не достигли указанной высоты или когда проскролили вверх страницы удаляем класс
-                    $("#div-menu").removeClass("stickly");        }
-            });
-        });
-    </script>
-    
-    <script>
-        $(document).ready(function(){
-            $(window).scroll(function(){ //во время прокрутки страницы
-    //проверяем прошли ли мы хедер-высоту менюшки
-                if ($(window).scrollTop()>700){
-                    $("#logo").addClass("logo_act"); //назначаем класс
-                    }
-                else
-                {
-    //если не достигли указанной высоты или когда проскролили вверх страницы удаляем класс
-                    $("#logo").removeClass("logo_act");        }
-            });
-        });
-    </script>
-    
-    
-    
-    <!-- красивый выезд блоков */ -->
-        <script>
-        $(document).ready(function() {
-        $('.anima')
-    // 	.addClass("hidden")
-        .viewportChecker({
-        classToAdd: 'visible animated slideInUp',
-        offset: 150
-        });
-        });
-        
-        $(document).ready(function() {
-        $('.animaleft')
-    // 	.addClass("hidden")
-        .viewportChecker({
-        classToAdd: 'visible animated slideInLeft',
-        offset: 150
-        });
-        });
-        
-        $(document).ready(function() {
-        $('.animaright')
-    // 	.addClass("hidden")
-        .viewportChecker({
-        classToAdd: 'visible animated slideInRight',
-        offset: 150
-        });
-        });
-        </script>
-        
-        <!-- плавный переход по ссылкам */ -->
-    
-        <script>
-            $('.smoothScroll').click(function(event) {
-                event.preventDefault();
-                var href=$(this).attr('href');
-                var target=$(href);
-                var top=target.offset().top;
-                $('html,body').animate({
-                  scrollTop: top
-                }, 1000);
-                });
-        </script>
-        
-        
-     
-       <!-- убиралка подтверждения мейла -->
-        <script>
-       setTimeout(function(){
-       $('#cont_err').fadeOut('slow')},2000
-       );
-        </script>
-        
-        
-        
-        
-          <!-- дата и время в форме -->  
-        <script>
-             $(document).ready(function() {
-                $('#calendar').fullCalendar({
-                        
-                googleCalendarApiKey: 'AIzaSyCouznQ-ad-JvNhtaMYnw6g_lCY34LLgSs',
-                events: {
-                    googleCalendarId: '2jqjvjgmqj7mvnrrimv6jhjj44@group.calendar.google.com'
-                },
-    
-                
-                eventRender: function(event, element) {
-                    element.find('.fc-content').addClass('hvr-bob'); 
-                    if(-1 != event.title.indexOf("Студия")) {
-                element.find('.fc-content').css('background-color', '#fe6367'); 
-                }
-                  if(-1 != event.title.indexOf("Индивидуальное")) {
-                    element.find('.fc-content').css('background-color', '#84c3c6'); 
-                    element.find('.fc-content').removeClass('hvr-bob'); 
-                    }
-                },
-                
-                
-                
-    
-                
-                    timeFormat: 'H:mm',
-                    aspectRatio: 2,
-                    eventLimit: 5,
-                    editable: true,
-                    weekends: true,
-                    firstDay: 1,
-                    height: "auto",
-                    
-                    header: {
-                        left: 'prev,next today',
-                        center: 'title',
-                        right: 'month, basicWeek'
-                    },
-                    monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
-                    monthNamesShort: ['Янв.','Фев.','Мар.','Апр.','Май.','Июн.','Июл.','Авг.','Сент.','Окт.','Ноя.','Дек.'],
-                    dayNames: ["Воскресенье","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота"],
-                    dayNamesShort: ["ВС","ПН","ВТ","СР","ЧТ","ПТ","СБ"],
-                    buttonText: {
-                        prev: "<",
-                        next: ">",
-                        today: "Сегодня",
-                        month: "Месяц",
-                        week: "Неделя",
-                        day: "День"
-                    },
-                    
-               
-                    eventClick: function(calEvent, jsEvent, view) {
-                        //console.log(calEvent);
-                        if(-1 === calEvent.title.indexOf("Индивидуальное")) {
-                            show('block');
-                            $('#window h4').html(calEvent.title);
-                            var loc = calEvent.location || "";
-                            var desc = calEvent.description || "за дополнительной информацией обращайтесь на мейл <a href=\"mailto:tatiyanao@mail.ru\"><span class=\"red_text\">tatiyanao@mail.ru</span></a>";
-                            
-                            //починка br
-                            if(calEvent.description){
-                                desc = desc.replace(/&lt;br&gt;/g, "");
-                            }
-                            
-                            $('#window .location').html(loc);
-                            $('#window .loc_href').attr('href', 'http://maps.google.com/?q='+loc);
-                            $('#window .description').html(desc);
-                        }
-                    }                      
-                });
-        });
-          </script>
-    
-        
-        <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-        (function (d, w, c) {
-            (w[c] = w[c] || []).push(function() {
-                try {
-                    w.yaCounter31919753 = new Ya.Metrika({
-                        id:31919753,
-                        clickmap:true,
-                        trackLinks:true,
-                        accurateTrackBounce:true,
-                        webvisor:true
-                    });
-                } catch(e) { }
-            });
-    
-            var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = "https://mc.yandex.ru/metrika/watch.js";
-    
-            if (w.opera == "[object Opera]") {
-                d.addEventListener("DOMContentLoaded", f, false);
-            } else { f(); }
-        })(document, window, "yandex_metrika_callbacks");
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/31919753" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
-                                    </main>		
 
 
                         
