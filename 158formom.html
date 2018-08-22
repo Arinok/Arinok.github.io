@@ -1,16 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <header class="header">
-            <nav class="navbar navbar-light bg-light">
-                <div class="container">
-                    <a class="navbar-brand" href="#"> 
-                        <img src="picture/iStock-500130316.jpg" width="1334px"; height="700px">
-                    </a>
-                </div>
-            </nav>
-        </header>
-
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
     <title> YogaLotus - Йога для жизни </title>
     <style>
         body {
@@ -38,6 +30,12 @@
     padding: 10; 
     text-align: right;
    }
+   .card {
+       background-color: rgb(241, 202, 229);
+   }
+   .img {
+    background-color: rgb(241, 202, 229);
+   }
     </style>
 
 	<meta property = "og:title" content = "YogaLotus" />
@@ -52,7 +50,13 @@
 
 </head>
     <body>
-        
+            <header class="header">
+                    <nav class="navbar navbar-light bg-light">
+                        <a class="navbar-brand" href="#"> 
+                                <img src="picture/iStock-500130316.jpg" width="1487px"; height="930px">
+                            </a>
+                    </nav>
+            </header>
          
         <script type="text/javascript">
         
@@ -80,11 +84,11 @@
                             <li> <big> <a href="#icons" class="smoothScroll">Кто я?</a> </big> </li>
                             <li> <big> <a href="#stoimost" class="smoothScroll">Стоимость</a> </big> </li>
                             <li> <big> <a href="#raspisanie" class="smoothScroll">Расписание</a> </big> </li>
-                        </div>
-                              </ul>
+                                    </div>
+                                </ul>
                             </ul>
-                            </div>
                         </div>
+                </div>
                         
                     </header>
                     <main>
@@ -97,38 +101,47 @@
                             </p>
                             <br> 
                             </div>
-                            <div id="icons">
-                            <div class="icon" float="left">
-                                <div align="center"> <img src="picture/icon_ind.png" alt="icon people" />
-                                        <p class="under_sign">  <big> Здоровое тело </big> </p>
-                                        <p class="under_sign2">Я помогу вам обрести гармонию со своим телом, улучшить работу всего организма, укрепить мышечный корсет и исправить осанку.
-
-                                        </p>
-                                 </div>
+                            <main class="main">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-lg-4">
+                                                <div class="card">
+                                                    <img class="card-img-top" src="picture/icon_ind.png" alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title"> Здоровое тело </h5>
+                                                        <p class="card-text"> Я помогу вам обрести гармонию со своим телом, улучшить работу всего организма, укрепить мышечный корсет и исправить осанку. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-lg-4">
+                                                    <div class="card">
+                                                        <img class="card-img-top" src="picture/icon_nar.png" alt="Card image cap" >
+                                                        <div class="card-body">
+                                                            <h5 class="card-title"> Духовное развитие </h5>
+                                                            <p class="card-text"> Занятия йогой задействуют не только физическое тело, но и все системы организма в целом. Занимаясь вы приобретете новую энергию, как в физическом, так и в эмоциональном плане. </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-lg-4">
+                                                    <div class="card">
+                                                        <img class="card-img-top" src="picture/icon_loc.png" alt="Card image cap">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title"> Всегда рядом </h5>
+                                                            <p class="card-text"> Занятия йогой задействуют не только физическое тело, но и все системы организма в целом. Занимаясь вы приобретете новую энергию, как в физическом, так и в эмоциональном плане. </p>
+                                                         </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                    </div>
+                            
+                            
                             </div>
-                            <br>
-                            <div class="icon">
-                                <div align="center">  <img src="picture/icon_nar.png" alt="icon cover" />
-                                    <p class="under_sign">  <big> Духовное развитие  </big> </p>
-                                    <p class="under_sign2"> Занятия йогой задействуют не только физическое тело, но и все системы организма в целом. Занимаясь вы приобретете новую энергию, как в физическом, так и в эмоциональном плане.
-
-                                    </p>
-                                </div>
-                            </div>
-                            <br> 
-                            <div class="icon" float="left">
-                                    <div align="center"> <img src="picture/icon_loc.png" alt="icon location" />
-                                        <p class="under_sign"> <big> Всегда рядом </big> </p>
-                                        <p class="under_sign2">Вы можете приехать на занятия, где я преподаю, либо выезд на дом по согласованию, а также практика по скайпу.
-                                        </p>
-                                
-                                     </div>
-                            </div>
-                            </div>
+                            <br />
                     
                         <article>
                                 <div id="aboutme">
-                                    <div align="center"> <img src="picture/Yoga.jpg" id="me_photo"  class="animaleft" alt="YogaLotus photo"/>
+                                    <div align="center"> <img src="picture/20160707_191635.jpg" id="me_photo"  class="animaleft" alt="YogaLotus photo" width="1000px"; height="600px"/>
                                         <div id="me_text_div" class="anima">
                                         <p id="me_text" align="center"> Намасте!
                                             <br />Меня зовут Татьяна.
@@ -142,7 +155,7 @@
                             <div class="title anima" id="stoimost">
                                 <div align="center"><h4 align="center"> <big> Стоимость занятий </big> </h4>
                                     <img src="picture/dividor.png" alt="разделитель" />  </div>   
-                                
+                            </div>
                                 
                                 
                                 
@@ -156,8 +169,10 @@
                                                     <div class="blok_text">
                                                         <p>В расписании можно подробно посмотреть точный адрес студии и время проведения занятий.</p>
                                                 </div>
-                                                    
-                                                </div>
+                                                <div class="blok_text">
+                                                        <p>Стоимость можно будет уточнить по телефону </p>
+                                            </div> 
+                                        </div>
                                                 
                                             
                                         <div class="oneblok" id="red_border">
@@ -186,17 +201,18 @@
                                                 </div>
                                             </div> 
                                         </div>
+                                </div>
                                             
                                         <div class="title anima" id="raspisanie">
                                         <div align="center"> <h4> <big> Расписание занятий </big> </h4>
                                             <img src="picture/dividor.png" alt="разделитель" /> </div>
                                         <br>
                                         <table border="1" align="center">
+                            
 
-
-                                            <tr>
+                                            <tr align="center">
                                             
-                                            <th>Понедельник</th>
+                                            <th> Понедельник</th>
                                             
                                             <th>Вторник</th>
                                             
@@ -223,11 +239,11 @@
                                             </tr>
                                             </table>
                                         </div>
-                                            
-                                        
-                                        
-
-
-                        
-    </body>
+                                        <footer class="footer">
+                                                <br /> <br />
+                                    <p>© YogaLotus 2007 - 2018.
+                                                        <span>Все права официально защищены.</span>
+                                    </p>  
+                                            </footer>                
+                     </body>
 </html>
